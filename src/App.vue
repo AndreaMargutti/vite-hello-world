@@ -1,5 +1,16 @@
 <script setup>
-import HelloWorld from './components/AppTItle.vue'
+import AppTitle from './components/AppTitle.vue';
+export default {
+  components: {
+    AppTitle,
+  },
+
+  data() {
+    return {
+      count: 0;
+    }
+  }
+}
 </script>
 
 <template>
@@ -11,7 +22,7 @@ import HelloWorld from './components/AppTItle.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <AppTitle />
 </template>
 
 <style scoped>
